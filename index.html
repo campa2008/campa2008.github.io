@@ -1,2 +1,331 @@
-<p>p means a paragraph
-<h> h means header 
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Enrique Fernandez-Campa 
+  </Fernandez-Campa>— Senior Design & Mini Fab Projects</title>
+  <meta name="description" content="Portfolio landing page for Senior Design Project, Mini Fabrication Projects, About, and Contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">⏚</span>
+        <span class="brand-text">Enrique Fernandez-Campa</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="sr-only">Open menu</span>
+          ☰
+        </button>
+        <ul id="nav-menu" class="nav-list">
+          <li><a href="#senior-design">Senior Design</a></li>
+          <li><a href="#mini-fab">Mini Fab Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a class="button button-outline" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="section hero" aria-label="Intro">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Engineering Portfolio</h1>
+        <p class="lead">
+          Explore my <strong>Senior Design Project</strong> from concept to final presentation, plus a collection of
+          <strong>Mini Fabrication Projects</strong> across CAD/CAM, embedded systems, and digital fabrication.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#senior-design">View Senior Design</a>
+          <a class="button button-outline" href="#mini-fab">See Mini Projects</a>
+        </div>
+      </div>
+      <div class="hero-card" role="img" aria-label="Stylized blueprint background with components">
+        <div class="hero-grid">
+          <div class="chip">CAD</div>
+          <div class="chip">CNC</div>
+          <div class="chip">PCB</div>
+          <div class="chip">MCU</div>
+          <div class="chip">3D</div>
+          <div class="chip">CAM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- Senior Design Project -->
+    <section id="senior-design" class="section section-alt" aria-labelledby="senior-design-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="senior-design-title">Senior Design Project</h2>
+          <p class="section-subtitle">From problem framing to a polished final prototype and presentation.</p>
+        </header>
+
+        <div class="cards-grid">
+          <!-- Problem Statement -->
+          <article class="card" id="problem-statement">
+            <h3>Problem Statement</h3>
+            <p>
+              Clearly defines the engineering challenge, stakeholders, functional requirements, constraints, and
+              success metrics.
+            </p>
+            <ul class="meta">
+              <li><strong>Scope:</strong> What problem, for whom, and why it matters.</li>
+              <li><strong>Requirements:</strong> Performance targets & constraints (size, cost, safety, etc.).</li>
+              <li><strong>Research:</strong> Prior art, market and technical review.</li>
+            </ul>
+            <a class="button button-text" href="#problem-statement-details">Read more ↓</a>
+          </article>
+
+          <!-- Preliminary Design Review -->
+          <article class="card" id="pdr">
+            <h3>Preliminary Design Review (PDR)</h3>
+            <p>
+              Concept generation, trade studies, initial modeling, and risk assessment leading to a preferred design.
+            </p>
+            <ul class="meta">
+              <li><strong>Concepts:</strong> Multiple candidate designs & tradeoffs.</li>
+              <li><strong>Models:</strong> First-order analyses & simulations.</li>
+              <li><strong>Plan:</strong> Milestones, BOM, test strategy.</li>
+            </ul>
+            <a class="button button-text" href="#pdr-details">View artifacts ↓</a>
+          </article>
+
+          <!-- Critical Design Review -->
+          <article class="card" id="cdr">
+            <h3>Critical Design Review (CDR)</h3>
+            <p>
+              Detail design with refined analyses, manufacturing drawings, and validation plan to authorize build.
+            </p>
+            <ul class="meta">
+              <li><strong>Drawings:</strong> DFM/DFA-ready documentation.</li>
+              <li><strong>Analysis:</strong> Loads, tolerances, reliability.</li>
+              <li><strong>Validation:</strong> Test protocols aligned to requirements.</li>
+            </ul>
+            <a class="button button-text" href="#cdr-details">Dive deeper ↓</a>
+          </article>
+
+          <!-- Final Presentation -->
+          <article class="card" id="final-presentation">
+            <h3>Final Presentation</h3>
+            <p>
+              Results, prototype demonstration, lessons learned, and recommendations for future work.
+            </p>
+            <ul class="meta">
+              <li><strong>Demo:</strong> Prototype performance vs. targets.</li>
+              <li><strong>Outcomes:</strong> KPIs, failures, and improvements.</li>
+              <li><strong>Next:</strong> Roadmap and commercialization notes.</li>
+            </ul>
+            <a class="button button-text" href="#final-details">See results ↓</a>
+          </article>
+        </div>
+
+        <!-- Expandable details (anchors) -->
+        <div class="details">
+          <h4 id="problem-statement-details">Problem Statement — Details</h4>
+          <p>Add your full narrative, diagrams, user interviews, and requirement tables here.</p>
+
+          <h4 id="pdr-details">Preliminary Design Review — Artifacts</h4>
+          <ul class="bullet-columns">
+            <li>Concept sketches & CAD screenshots</li>
+            <li>Trade study matrices</li>
+            <li>Early simulations & assumptions</li>
+            <li>Risk register & mitigation plan</li>
+          </ul>
+
+          <h4 id="cdr-details">Critical Design Review — Package</h4>
+          <ul class="bullet-columns">
+            <li>Detailed drawings & tolerances</li>
+            <li>Final BOM & sourcing strategy</li>
+            <li>FEA/thermal/CFD summaries</li>
+            <li>Validation & test procedures</li>
+          </ul>
+
+          <h4 id="final-details">Final Presentation — Highlights</h4>
+          <ul class="bullet-columns">
+            <li>Prototype demo video/screens</li>
+            <li>Performance vs. requirements</li>
+            <li>Costs, manufacturability, sustainability</li>
+            <li>Future work & lessons learned</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini Fabrication Projects -->
+    <section id="mini-fab" class="section" aria-labelledby="mini-fab-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="mini-fab-title">Mini Fabrication Projects</h2>
+          <p class="section-subtitle">A sampler of hands-on builds across digital fabrication and embedded systems.</p>
+        </header>
+
+        <div class="cards-grid">
+          <!-- Computer Controlled Cutting -->
+          <article class="card">
+            <h3>Computer Controlled Cutting</h3>
+            <p>Laser/plotter workflows, kerf tests, and parametric joints.</p>
+            <ul class="meta">
+              <li>Material tests</li>
+              <li>Parametric design</li>
+              <li>Assembly jigs</li>
+            </ul>
+          </article>
+
+          <!-- Embedded Programming -->
+          <article class="card">
+            <h3>Embedded Programming</h3>
+            <p>Microcontroller bring-up, drivers, and firmware architecture.</p>
+            <ul class="meta">
+              <li>GPIO, UART, I²C, SPI</li>
+              <li>RTOS basics</li>
+              <li>Power budgeting</li>
+            </ul>
+          </article>
+
+          <!-- 3D Scanning -->
+          <article class="card">
+            <h3>3D Scanning</h3>
+            <p>Photogrammetry & structured light capture; cleanup and alignment.</p>
+            <ul class="meta">
+              <li>Mesh cleanup</li>
+              <li>Registration</li>
+              <li>Scale calibration</li>
+            </ul>
+          </article>
+
+          <!-- Computer-Controlled Machining -->
+          <article class="card">
+            <h3>Computer-Controlled Machining</h3>
+            <p>2.5D/3D toolpaths, workholding, and feeds & speeds tuning.</p>
+            <ul class="meta">
+              <li>CAM strategy</li>
+              <li>Chip load calc</li>
+              <li>Probe & zeroing</li>
+            </ul>
+          </article>
+
+          <!-- Electronics Production -->
+          <article class="card">
+            <h3>Electronics Production</h3>
+            <p>PCB design, fab, reflow, and test procedures.</p>
+            <ul class="meta">
+              <li>Schematic & layout</li>
+              <li>DFM rules</li>
+              <li>Bring-up checklist</li>
+            </ul>
+          </article>
+
+          <!-- Molding and Casting -->
+          <article class="card">
+            <h3>Molding & Casting</h3>
+            <p>Two-part molds, venting, and demold strategies.</p>
+            <ul class="meta">
+              <li>Silicone selection</li>
+              <li>Draft & shrinkage</li>
+              <li>Post-processing</li>
+            </ul>
+          </article>
+
+          <!-- Wildcard -->
+          <article class="card">
+            <h3>Wildcard</h3>
+            <p>Open exploration — from generative design to custom tooling.</p>
+            <ul class="meta">
+              <li>Experimental rigs</li>
+              <li>Rapid prototypes</li>
+              <li>Material studies</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section section-alt" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <header class="section-header">
+          <h2 id="about-title">About Me</h2>
+          <p class="section-subtitle">Mechanical/Aerospace-leaning engineer with a passion for design for manufacture.</p>
+        </header>
+
+        <div class="about-card">
+          <p>
+            I enjoy turning ambiguous problems into manufacturable solutions. My interests span CAD/CAM,
+            embedded systems, and rapid prototyping. When I’m not in the lab, I’m sketching concepts or
+            tuning toolpaths.
+          </p>
+          <ul class="meta">
+            <li><strong>Tools:</strong> SolidWorks/Fusion, Altium/KiCad, Python/C/C++, Marlin/GRBL, Prusa/SLA.</li>
+            <li><strong>Focus:</strong> DFM/DFA, tolerance stacks, test-driven hardware.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="contact-title">Contact Me</h2>
+          <p class="section-subtitle">Have a question or want to collaborate? Send a note.</p>
+        </header>
+
+        <form class="contact-form" action="https://example.com/form" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="button" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> My Engineering Portfolio • Built with love for design & fabrication.</p>
+      <a class="to-top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Simple nav toggle for small screens + current year in footer
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
