@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer Controlled Cutting | Subsite</title>
+  <meta name="description" content="A clean, modern subsite about computer-controlled cutting: laser, vinyl, and CNC workflows with safety, materials, and project templates." />
+  <!--<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>✂️</text></svg>">
+--><link rel="stylesheet" href="../styles.css"
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div>
+          <div class="breadcrumbs"><a href="#">Home</a> / <a href="#">Projects</a> /</div>
+          <div>Computer Controlled Cutting</div>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Section navigation">
+        <a href="#workflows">Workflows</a>
+        <a href="#materials">Materials</a>
+        <a href="#safety">Safety</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#downloads">Downloads</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <span class="eyebrow">Subsite</span>
+      <h1>Computer‑Controlled Cutting</h1>
+      <p>
+        This subsite covers digital fabrication with <strong>laser cutters</strong>, <strong>vinyl cutters</strong>, and <strong>CNC routers</strong>—from design prep and machine setup to safe operation and finishing. Use it as a quick reference for workshops or coursework.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#workflows">View workflows</a>
+        <a class="btn" href="#faq">FAQs</a>
+      </div>
+    </div>
+
+    <section id="workflows">
+      <div class="container">
+        <h2>Core Workflows</h2>
+        <div class="grid cols-3">
+          <article class="card">
+            <span class="eyebrow">Laser</span>
+            <h3>Laser Cutting & Engraving</h3>
+            <p>High precision for sheet materials like plywood, acrylic, cardboard, and some fabrics.</p>
+            <ul class="list">
+              <li>Design in vector software (SVG, DXF, AI).</li>
+              <li>Set stroke colors for operations (e.g., red=cut, blue=score, black=engrave).</li>
+              <li>Choose power/speed/Hz per material thickness.</li>
+              <li>Focus lens, enable exhaust & air assist.</li>
+              <li>Run a <em>test cut</em> before production.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="eyebrow">Vinyl</span>
+            <h3>Vinyl Cutting</h3>
+            <p>Fast, quiet cutting of adhesive films, heat‑transfer vinyl (HTV), and stencils.</p>
+            <ul class="list">
+              <li>Prepare clean vectors; convert text to outlines.</li>
+              <li>Set blade depth for just‑kiss cutting the film.</li>
+              <li>Mirror artwork for HTV before cutting.</li>
+              <li>Weed carefully and apply with transfer tape or heat press.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="eyebrow">CNC</span>
+            <h3>CNC Routing</h3>
+            <p>Subtractive machining of wood, plastics, and soft metals using toolpaths (2D/2.5D/3D).</p>
+            <ul class="list">
+              <li>CAM setup: tool library, feeds & speeds, step‑down, step‑over.</li>
+              <li>Zero X/Y/Z with touch‑off; check stock clamps & clearance.</li>
+              <li>Simulate toolpaths and dry‑run above stock.</li>
+              <li>Dust collection and workholding are critical.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>General Design → Fabrication Pipeline</h3>
+          <div class="grid cols-3">
+            <img src="../IMG_0571.PNG">
+            <div class="step"><div class="bullet">1</div><div><strong>Model</strong><br><span class="small">Create vectors (Inkscape/Illustrator) or 3D (Fusion 360/Rhino). Use real‑world units.</span></div></div>
+            <div class="step"><div class="bullet">2</div><div><strong>Prepare</strong><br><span class="small">Set kerf/clearance, stroke widths, nesting, and line colors/layers by operation.</span></div></div>
+            <div class="step"><div class="bullet">3</div><div><strong>Export</strong><br><span class="small">Export SVG/DXF for 2D or post‑process G‑code for CNC with the right post.</span></div></div>
+            <div class="step"><div class="bullet">4</div><div><strong>Setup</strong><br><span class="small">Secure stock, focus/zero tools, set origin, enable extraction and air assist.</span></div></div>
+            <div class="step"><div class="bullet">5</div><div><strong>Test</strong><br><span class="small">Run a small test: power/speed chips (laser) or surfacing/pocket test (CNC).</span></div></div>
+            <div class="step"><div class="bullet">6</div><div><strong>Cut</strong><br><span class="small">Stay with the machine; be ready to pause. Inspect edges, adjust as needed.</span></div></div>
+          </div>
+          <p class="note" style="margin-top:12px">Tip: Document settings per material (e.g., 3mm birch: 35% power @ 15mm/s; 6mm cast acrylic: 65% @ 8mm/s). This builds a local library for consistent results.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="materials">
+      <div class="container">
+        <h2>Materials & Recommended Settings (Starting Points)</h2>
+        <div class="card">
+          <div style="overflow:auto">
+            <table class="table" aria-label="Material settings table">
+              <thead>
+                <tr>
+                  <th>Material</th>
+                  <th>Tool</th>
+                  <th>Thickness</th>
+                  <th>Start Settings</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Birch Plywood</td>
+                  <td>Laser</td>
+                  <td>3 mm</td>
+                  <td>Power 35–45%, 15–20 mm/s</td>
+                  <td>Mask for cleaner edges; watch for voids.</td>
+                </tr>
+                <tr>
+                  <td>Cast Acrylic</td>
+                  <td>Laser</td>
+                  <td>3–6 mm</td>
+                  <td>Engrave 20–30%, Cut 55–70% @ 6–12 mm/s</td>
+                  <td>Use air assist; avoid flame‑polished edges near joints.</td>
+                </tr>
+                <tr>
+                  <td>Cardboard</td>
+                  <td>Laser</td>
+                  <td>Single wall</td>
+                  <td>Power 15–25%, 25–35 mm/s</td>
+                  <td>Highly flammable—never leave unattended.</td>
+                </tr>
+                <tr>
+                  <td>Adhesive Vinyl</td>
+                  <td>Vinyl Cutter</td>
+                  <td>Film</td>
+                  <td>Blade depth: just through film; Speed: medium</td>
+                  <td>Test cut a small square with triangle; adjust force.</td>
+                </tr>
+                <tr>
+                  <td>HTV (Heat‑Transfer)</td>
+                  <td>Vinyl Cutter</td>
+                  <td>Film</td>
+                  <td>Mirror art; 150–160°C, 10–15s press</td>
+                  <td>Warm or cold peel depending on brand.</td>
+                </tr>
+                <tr>
+                  <td>MDF</td>
+                  <td>CNC</td>
+                  <td>12–18 mm</td>
+                  <td>6mm end mill, 18k RPM, 1500–2500 mm/min, 2–3 mm DOC</td>
+                  <td>Go
