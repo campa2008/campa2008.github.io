@@ -193,4 +193,12 @@ input:focus, textarea:focus{
   }
   .nav-list.open{ display:flex; }
   .nav-list a{ padding:.6rem .75rem; }
+  img.scaled-10 {
+
+  width: 10%;
+  height: auto;
+  display: block;
+  margin: 8px auto; /* centers the image, optional */
+}
+
 }
