@@ -195,6 +195,8 @@ input:focus, textarea:focus{
   .nav-list a{ padding:.6rem .75rem; }
   img.scaled-10 {
 
+}
+img.scaled-10 {
   width: 10%;
   height: auto;
   display: block;
