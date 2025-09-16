@@ -196,11 +196,9 @@ input:focus, textarea:focus{
   img.scaled-10 {
 
 }
-img.scaled-10 {
-  width: 10%;
-  height: auto;
-  display: block;
-  margin: 8px auto; /* centers the image, optional */
+
 }
 
+.card img{
+  max-width: 50%;
 }
